@@ -11,7 +11,7 @@ lamps = [lamp_A, lamp_B, lamp_C, lamp_D]
 while True:
     for lamp in lamps:
         for brightness in range(0, 255):
-            lamp.value(brightness / 255)
+            lamp.value(brightness / 255.0)
             sleep(0.01)
     for lamp in lamps:
         lamp.value(0)
