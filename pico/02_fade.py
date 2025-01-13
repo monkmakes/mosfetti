@@ -1,10 +1,10 @@
 from machine import Pin, PWM
 from utime import sleep
 
-lamp_A = PWM(Pin(18, Pin.OUT))
-lamp_B = PWM(Pin(19, Pin.OUT))
-lamp_C = PWM(Pin(20, Pin.OUT))
-lamp_D = PWM(Pin(21, Pin.OUT))
+lamp_A = PWM(Pin(18, Pin.OUT), 1000)
+lamp_B = PWM(Pin(19, Pin.OUT), 1000)
+lamp_C = PWM(Pin(20, Pin.OUT), 1000)
+lamp_D = PWM(Pin(21, Pin.OUT), 1000)
 
 lamps = [lamp_A, lamp_B, lamp_C, lamp_D]
 
